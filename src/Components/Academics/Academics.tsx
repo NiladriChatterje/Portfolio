@@ -1,5 +1,4 @@
 import styles from './Academics.module.css';
-import { motion } from 'framer-motion';
 import { HITK, CU, CISCE } from '../../assets/academics_images';
 
 const academics = [{
@@ -38,9 +37,8 @@ const academics = [{
 const Academics = () => {
     return (
         <section id={styles.academicContainer}>
-            <motion.h2 initial={{ scale: 0.3 }}
-                whileInView={{ scale: 1 }}
-                id={styles.heading}>Academic achievements</motion.h2>
+            <h2
+                id={styles.heading}>Academic achievements</h2>
 
             <article id={styles.academic_cards}>
                 {academics?.map(item => (

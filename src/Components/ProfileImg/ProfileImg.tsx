@@ -1,4 +1,5 @@
 import { Profile } from '../../assets'
+import { motion } from 'framer-motion'
 
 interface styled {
     borderRadius: string | number,
@@ -20,7 +21,11 @@ const styleSheet: styled = {
 const ProfileImg = () => {
 
     return (
-        <img src={Profile} style={{ ...styleSheet, position: 'absolute', objectFit: 'contain' }} />
+        <motion.img
+            transition={{ duration: '800ms' }}
+            initial={{ scale: 0.8 }}
+            whileInView={{ scale: 1 }}
+            src={Profile} style={{ ...styleSheet, position: 'absolute', objectFit: 'contain' }} />
     )
 }
 

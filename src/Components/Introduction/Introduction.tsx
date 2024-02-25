@@ -1,5 +1,4 @@
 import styles from './Introduction.module.css';
-import { motion } from 'framer-motion';
 import { ProfileImg } from '..';
 
 
@@ -10,10 +9,7 @@ const myIntro = {
 
 const Introduction = () => {
     return (
-        <motion.div
-            initial={{ scale: 0.5 }}
-            whileTap={{ scale: 1.20 }}
-            whileInView={{ scale: 1 }}
+        <div
             id={styles.intro}
             className='cards'>
             <ProfileImg />
@@ -34,7 +30,7 @@ const Introduction = () => {
                 Though I am a <span>beginner</span>, my passion and dedication know no bounds. Let's embark on this journey together,
                 pushing the boundaries of technology and creating a brighter digital future!
             </p>
-        </motion.div>
+        </div>
     )
 }
 
