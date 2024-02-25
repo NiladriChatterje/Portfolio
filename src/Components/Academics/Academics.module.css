@@ -1,0 +1,41 @@
+#heading {
+    background-color: rgb(190, 190, 190);
+    color: #242424;
+    width: max-content;
+    padding: 8px 10px;
+    border-radius: 8px;
+
+}
+
+#cards {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#academic_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#academicContainer {
+    font-family: "Protest Guerrilla", sans-serif;
+    width: 65%;
+}
+
+.captions {
+    border-top: 2px solid black;
+    margin-top: 5px;
+    line-height: 0.8;
+    width: 100%;
+    color: #242424;
+
+}
+
+@media all and (max-width:880px) {
+    #academicContainer {
+        width: 100%;
+    }
+}

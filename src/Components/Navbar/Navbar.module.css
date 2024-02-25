@@ -1,0 +1,57 @@
+#nav {
+    width: 100%;
+    height: 72px;
+    background-color: #242424;
+    z-index: 5;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hamburger,
+#closeIcon {
+    object-fit: contain;
+    display: none;
+    filter: invert(100%);
+    cursor: pointer;
+    top: 10px;
+}
+
+#hamburger {
+    position: fixed;
+    left: 10px;
+
+}
+
+#closeIcon {
+    position: absolute;
+    right: 10px;
+}
+
+@media all and (max-width:880px) {
+    #ul {
+        width: 60%;
+        box-shadow: 15px 0 15px -12px rgba(0, 0, 0, 0.586);
+        height: 100dvh;
+        flex-direction: column;
+        background-color: #242424;
+        position: fixed;
+        left: 0;
+        top: -10px;
+    }
+
+    #hamburger,
+    #closeIcon {
+        display: inline-block;
+    }
+}

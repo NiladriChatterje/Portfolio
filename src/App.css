@@ -1,0 +1,47 @@
+svg {
+  height: 100%;
+  z-index: 5;
+  position: fixed;
+
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  gap: 50px;
+  overflow: clip auto;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.cards {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 280px;
+  min-height: 220px;
+  background-color: rgb(177, 177, 177);
+}
+
+#svg-1 {
+  top: 70px;
+  right: 20px;
+}
+
+
+#bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@media all and (max-width:880px) {
+  #root {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
