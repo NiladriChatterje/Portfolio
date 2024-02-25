@@ -24,14 +24,15 @@ function App() {
 
   return (
     <>
-      <NavbarDesign />
-      {<BackgroundSVG />}
+
       <Navbar />
       <div id={'root'}>
         <Introduction />
         <Divider />
         <Academics />
       </div>
+      <NavbarDesign />
+      {<BackgroundSVG />}
     </>
   )
 }
