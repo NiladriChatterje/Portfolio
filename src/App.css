@@ -36,6 +36,7 @@ svg {
 
 #bg {
   position: fixed;
+  background-attachment: fixed;
   right: 0;
   top: 0;
 }
