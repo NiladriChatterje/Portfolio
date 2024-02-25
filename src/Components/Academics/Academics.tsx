@@ -44,10 +44,7 @@ const Academics = () => {
 
             <article id={styles.academic_cards}>
                 {academics?.map(item => (
-                    <motion.figure
-                        initial={{ scale: 0.6 }}
-                        whileTap={{ scale: 1.20 }}
-                        whileInView={{ scale: 1 }}
+                    <figure
                         key={item?.abbr} id={styles.cards} className='cards'>
                         <img src={item?.Img} alt={item?.course} style={{ objectFit: 'contain', borderRadius: '50%' }}
                             height={90} />
@@ -65,7 +62,7 @@ const Academics = () => {
                             <h5>{item?.college}</h5>
                             <h5>{item?.university}</h5>
                         </figcaption>
-                    </motion.figure>))}
+                    </figure>))}
 
             </article>
         </section >

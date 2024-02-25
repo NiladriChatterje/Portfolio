@@ -20,10 +20,8 @@ const Introduction = () => {
             <h2>
                 Myself | {myIntro.firstName}
             </h2>
-            <motion.p
-                id={styles.myDescription}
-                initial={{ scale: 0.4 }}
-                whileInView={{ scale: 1 }}>
+            <p
+                id={styles.myDescription}>
                 I'm <span>Niladri Chatterjee</span>, a fresh-faced trailblazer ready to make waves in the realms of <span>web development</span>,
                 <span >blockchain development</span> and <span>Machine Learning</span>.
                 Armed with a thirst for innovation and a hunger for knowledge,
@@ -35,7 +33,7 @@ const Introduction = () => {
                 Machine Learning to bring productivity and optimizations in a world where transactions being the only way of interaction.
                 Though I am a <span>beginner</span>, my passion and dedication know no bounds. Let's embark on this journey together,
                 pushing the boundaries of technology and creating a brighter digital future!
-            </motion.p>
+            </p>
         </motion.div>
     )
 }
