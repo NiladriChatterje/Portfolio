@@ -1,5 +1,5 @@
 svg {
-  height: 100dvh;
+  height: 100svh;
   position: fixed;
 
 }
@@ -38,7 +38,8 @@ svg {
   position: fixed;
   background-attachment: fixed;
   right: 0;
-  top: 0;
+  bottom: 0px;
+  height: 550px;
 }
 
 @media all and (max-width:880px) {
